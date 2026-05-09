@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: okojyo_keyboard
+name: okojyo_keyboard
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - okojyo_keyboard_left
+  - okojyo_keyboard_right

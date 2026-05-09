@@ -1,0 +1,4 @@
+config SHIELD_OKOJYO_KEYBOARD_LEFT
+    def_bool $(shields_list_contains,okojyo_keyboard_left)
+config SHIELD_OKOJYO_KEYBOARD_RIGHT
+    def_bool $(shields_list_contains,okojyo_keyboard_right)

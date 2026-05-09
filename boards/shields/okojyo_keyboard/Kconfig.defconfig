@@ -1,0 +1,14 @@
+
+if SHIELD_OKOJYO_KEYBOARD_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "okojyo_keyboard"
+
+endif
+
+if SHIELD_OKOJYO_KEYBOARD_LEFT || SHIELD_OKOJYO_KEYBOARD_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
