@@ -19,7 +19,7 @@
 &none  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp SQT  &kp PIPE           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp MINUS
 &none  &none            &none              &none     &none       &none        &kp SQT  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON
 &none  &none            &none              &none     &none       &none        &none    &none              &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL      &none
-       &none            &none              &none     &none       &none        &none    &none                                                           &none
+       &none            &none              &none     &none       &none        &none    &none                                                           &to 0
             >;
         };
 
