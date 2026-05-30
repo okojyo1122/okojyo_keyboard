@@ -6,26 +6,31 @@
 / {
     combos {
         compatible = "zmk,combos";
+
         combo_lclk {
             timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&mkp LCLK>;
         };
+
         combo_rclk {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&mkp RCLK>;
         };
+
         combo_mclk {
             timeout-ms = <50>;
             key-positions = <19 20 21>;
             bindings = <&mkp MCLK>;
         };
+
         combo_scrl_up {
             timeout-ms = <50>;
             key-positions = <9 10>;
             bindings = <&msc SCRL_UP>;
         };
+
         combo_scrl_dn {
             timeout-ms = <50>;
             key-positions = <32 33>;
@@ -38,28 +43,28 @@
 
         layer_0 {
             bindings = <
-&kp ESC               &kp Q         &kp W    &kp E            &kp R        &kp T         &kp Y     &kp U      &kp I      &kp O    &kp P                &kp MINUS
-&mt LEFT_CONTROL TAB  &kp A         &kp S    &kp D            &kp F        &kp G         &kp H     &kp J      &kp K      &kp L    &kp SEMI             &kp SQT
-&kp LSHFT             &kp Z         &kp X    &kp C            &kp V        &kp B         &kp N     &kp M      &kp COMMA  &kp DOT  &mt RIGHT_ALT SLASH  &mt RIGHT_SHIFT BACKSLASH
-                      &kp LEFT_WIN  &lt 1 A  &mt LANG2 LANG1  &lt 2 SPACE  &lt 3 DELETE  &kp BSPC  &kp ENTER                                           &to 3
+&kp ESC               &kp Q         &kp W      &kp E            &kp R        &kp T         &kp Y     &kp U      &kp I      &kp O    &kp P                &kp MINUS
+&mt LEFT_CONTROL TAB  &kp A         &kp S      &kp D            &kp F        &kp G         &kp H     &kp J      &kp K      &kp L    &kp SEMI             &kp SQT
+&kp LSHFT             &kp Z         &kp X      &kp C            &kp V        &kp B         &kp N     &kp M      &kp COMMA  &kp DOT  &mt RIGHT_ALT SLASH  &mt RIGHT_SHIFT INT_YEN
+                      &kp LEFT_WIN  &lt 1 ESC  &mt LANG2 LANG1  &lt 2 SPACE  &lt 3 DELETE  &kp BSPC  &kp ENTER                                           &to 3
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &kp LS(N1)      &kp LS(N2)       &kp LS(N3)      &kp LS(N4)     &kp LS(N5)   &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp LS(BACKSLASH)  &none
-&none  &kp LS(N6)      &kp LS(INT_YEN)  &kp LS(INT_RO)  &kp LS(EQUAL)  &kp LS(N7)   &kp LEFT_BRACKET      &kp LS(N8)             &kp LS(N9)         &kp LS(MINUS)  &kp LS(SEMI)       &kp LS(SQT)
-&none  &none           &none            &none           &none          &none         &kp INT_YEN           &kp SQT                &kp LS(COMMA)      &kp LS(DOT)    &kp MINUS          &kp EQUAL
-       &none           &none            &none           &none          &none         &none                 &none                                                     &to 0
+&none  &kp LS(N1)   &kp LS(EQUAL)  &kp LS(N3)     &kp LS(N4)    &kp LS(N5)   &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET  &kp LS(N8)     &kp LS(N9)     &kp BACKSLASH  &kp LS(BACKSLASH)
+&none  &kp LS(N6)   &kp EQUAL      &kp LS(COMMA)  &kp LS(DOT)   &none         &kp LEFT_BRACKET       &kp LS(N7)         &kp LS(N2)     &kp LS(MINUS)  &kp LS(SEMI)   &kp LS(SQT)
+&none  &none        &none          &none          &none         &none         &kp LS(LEFT_BRACKET)   &kp SQT            &kp INT_YEN    &kp LS(INT_YEN) &kp LS(INT_RO) &kp LS(SLASH)
+       &none        &none          &none          &none         &none         &none                  &none                                              &to 0
             >;
         };
 
         layer_2 {
             bindings = <
-&none  &kp PAGE_UP   &kp UP_ARROW  &kp PAGE_DOWN    &kp HOME  &none       &msc SCRL_UP    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LS(SEMI)   &none
-&none  &kp LEFT      &kp DOWN      &kp RIGHT_ARROW  &kp END   &none       &msc SCRL_LEFT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS      &msc SCRL_RIGHT
-&none  &kp LA(LEFT)  &none         &kp LA(RIGHT)    &none     &none       &msc SCRL_DOWN  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)  &kp DOT
-       &none         &none         &none            &none     &kp DELETE  &kp BACKSPACE   &kp ENTER                                         &to 0
+&none  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN    &kp HOME      &none       &msc SCRL_UP    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LS(SEMI)   &kp LS(MINUS)
+&none  &kp LEFT     &kp DOWN      &kp RIGHT_ARROW  &kp END       &none       &msc SCRL_LEFT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS      &msc SCRL_RIGHT
+&none  &none        &none         &kp LA(LEFT)     &kp LA(RIGHT) &none       &msc SCRL_DOWN  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0      &kp DOT
+       &none        &none         &none            &none         &kp DELETE  &kp BACKSPACE   &kp ENTER                                         &to 0
             >;
         };
 
