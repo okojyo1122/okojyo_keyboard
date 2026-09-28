@@ -79,10 +79,10 @@
 
         layer_4 {
             bindings = <
-&kp ESC    &kp Q   &kp W   &kp E   &kp R   &kp T   &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp A   &kp S   &kp D   &kp F   &kp G   &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans  &trans  &trans  &trans  &trans  &trans
-           &kp LCTRL  &kp LALT  &kp SPACE  &kp N1  &kp N2  &trans  &trans                  &to 0
+&kp LA(TAB)  &kp LG(TAB)   &kp LG(UP)    &kp LG(E)       &kp LG(LS(S))    &kp LG(D)        &none  &kp LC(GRAVE)  &kp LC(LS(P))  &kp LC(F)      &kp LG(L)      &none
+&kp LCTRL    &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)   &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &none  &kp LC(W)      &kp LC(T)      &kp LC(LS(T))  &kp LA(LEFT)   &kp LA(RIGHT)
+&kp LSHFT    &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)        &kp LC(LG(D))    &none  &kp LC(SLASH)  &kp LC(Y)      &none          &kp LA(F4)     &none
+             &none         &none         &kp SPACE       &kp ENTER        &kp DELETE       &kp BSPC  &none                                       &to 0
             >;
         };
     };
